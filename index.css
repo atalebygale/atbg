@@ -23,6 +23,8 @@
     font-family:cursive;
 }
 /* Animations */
+
+
 .anim1 {
     font-size:medium;
     font-weight: bolder;
@@ -31,24 +33,10 @@
     width:fit-content;
     padding: 10px;
     transition: all 0.1s ease-in;
-}
-.anim2 {
-    font-size:medium;
-    font-weight: bolder;
-    border: 4px solid black;
-    position: relative;
-    width:fit-content;
-    padding: 10px;
-    transition: all 0.1s ease-in;
-}
-.anim1:hover{
-    color:blueviolet;
-    background-color: azure;
-    font-size:xx-large;
-    border: 4px solid blueviolet;
+
   }
-  .anim2:hover{
-      font-size: large;
+  .anim1:hover{
+      font-size:xx-large;
       color:aqua;
       border: 4px dashed aqua;
   }
