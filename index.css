@@ -1,10 +1,25 @@
+/* Header */
 .header {
     color: rgb(170, 141, 199);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     max-width: fit-content;
     margin: 0 auto;
+    font-size: large;
 }
 .header h3 {
     font-size:medium;
+}
+/* List of my favorite things */
+.favthings {
+    font-size:larger;
+}
+.bullet2 {
+    color:blue;
+}
+.bullet4:hover{
+    transform: translateY(-10px);
+}
+.bullet5 {
+    font-family:cursive;
 }
