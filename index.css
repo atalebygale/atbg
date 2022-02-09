@@ -70,20 +70,24 @@ body {
     width: fit-content;
     color: rgb(170, 141, 199);
     background-color: rgba(170, 141, 199, 0.2);
+    margin: 0 auto;
+    margin-bottom: 60px;
 }
 /* gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 400px);
+    grid-template-rows: repeat(2, 500px);
     grid-gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .gallery_img {
     width: 100%;
-    height: auto;
-    object-fit:cover;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.1s ease-in;
-
+    overflow: hidden;
 }
 .gallery_img:hover{
     transform: scale(1.2);
