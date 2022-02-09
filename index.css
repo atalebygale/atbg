@@ -1,6 +1,10 @@
+body {
+    color:rgb(170, 141, 199);
+}
 /* Header */
 .header {
     color: rgb(170, 141, 199);
+    background-color: rgba(170, 141, 199, 0.2);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     max-width: fit-content;
@@ -10,33 +14,77 @@
 .header h3 {
     font-size:medium;
 }
+/* Let me show you my favorite things */
+.letmeshow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:;
+    width: fit-content;
+    color: rgb(170, 141, 199);
+    background-color: rgba(170, 141, 199, 0.2);
+}
 .favthings {
     font-size:larger;
 }
-.bullet2 {
+.colors {
     color:blue;
 }
-.bullet4:hover{
+.hover:hover{
     transform: translateY(-10px);
 }
-.bullet5 {
+.fonts {
     font-family:cursive;
+    font-weight: bold;
+}
+/* Let's practice animatinos */
+.practicean {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:;
+    width: fit-content;
+    color: rgb(170, 141, 199);
+    background-color: rgba(170, 141, 199, 0.2);
 }
 /* Animations */
-
-
 .anim1 {
     font-size:medium;
     font-weight: bolder;
-    border: 4px solid black;
+    border: 4px solid gray;
     position: relative;
     width:fit-content;
     padding: 10px;
     transition: all 0.1s ease-in;
+    color: gray;
 
   }
   .anim1:hover{
       font-size:xx-large;
-      color:aqua;
-      border: 4px dashed aqua;
+      color:gray;
+      border: 4px solid gray;
   }
+/* Let's add photos */
+.addphoto {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:;
+    width: fit-content;
+    color: rgb(170, 141, 199);
+    background-color: rgba(170, 141, 199, 0.2);
+}
+/* gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 15px;
+}
+.gallery_img {
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+    transition: all 0.1s ease-in;
+
+}
+.gallery_img:hover{
+    transform: scale(1.2);
+}
