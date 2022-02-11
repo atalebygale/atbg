@@ -67,6 +67,7 @@ body {
 .movingon {
     text-align: center;
 }
+
 /* Let's add photos */
 .addphoto {
     margin-top: 30px;
@@ -84,7 +85,12 @@ body {
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     margin-bottom: 20px;
 }
+
 .gallery_img {
     width: 100%;
     overflow:scroll;
+    transition: all 0.2s ease-in;
+}
+.gallery_img:hover {
+    transform: scale(1.2)
 }
