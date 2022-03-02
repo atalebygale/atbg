@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATBG</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+        const catToHumanAge =  (catAge) => {
+    if (catAge < 1) {
+        return 15 * catAge;
+    } else if (catAge < 2) {
+        return 15 + ((catAge - 1) * 9)
+    }
+
+    const firstYear = 15;
+    const secondYear = 9;
+    const laterYears = (catAge - 2) * 4;
+    const humanAge = firstYear + secondYear + laterYears; 
+    return humanAge;
+}
+
+const printCatToHumanAge = (catName, catAge) => {
+    const catName = parseInt(document
+        .querySelector("#catname").value);
+    const catAge = parseInt(document
+        .querySelector("#catage").value)
+    return `Hi. I'm ${catName}. I am ${catAge} years old. If I were a hooman, I'd be ${catToHumanAge(catAge)} years old.`
+}
+    </script>
 </head>
 
 <body>
@@ -63,15 +86,18 @@
             class="gallery_img" alt="img">
         <img src="https://res.cloudinary.com/atalebygale/image/upload/v1644424908/DSC_8520_vslfa9.jpg" class="gallery_img" alt="img">
     </div>
+<!--Javascript (cat years to human years)-->
     <div>
-        <script>
-      
-        </script>
+        <h2> Let's do some javascript now.</h2>
+        <h3> Wanna know how old your cat is in human years? Enter their name and age below to find out!</h3>
+        <P> Cat's name</P>
+        <input type = "text" id = "catname">
+        <p> Cat's age</p>
+        <input type = "text" id = "catage">
+        <p></p>
+        <button id="btn"> Calculate </button>
+        <div id="result"></div>
     </div>
-
-<script>
-alert("Hi! Welcome to my page");
-</script>
 </body>
 
 </html>

@@ -10,6 +10,9 @@ return humanYears
 console.log(`Hi, I'm ${cat}. I am ${catYears} years old in cat years, and ${humanYears} years old in human years. I'm so glad mom didn't put me down!`);
 */
 
+/*(document
+parseInt.querySelector("#height").value)*/
+
 const catToHumanAge =  (catAge) => {
     if (catAge < 1) {
         return 15 * catAge;
@@ -25,6 +28,10 @@ const catToHumanAge =  (catAge) => {
 }
 
 const printCatToHumanAge = (catName, catAge) => {
+    const catName = parseInt(document
+        .querySelector("#catname").value);
+    const catAge = parseInt(document
+        .querySelector("#catage").value)
     return `Hi. I'm ${catName}. I am ${catAge} years old. If I were a hooman, I'd be ${catToHumanAge(catAge)} years old.`
 }
 
