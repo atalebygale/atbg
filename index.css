@@ -20,7 +20,6 @@ body {
 .letmeshow {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color:;
     width: fit-content;
     color: rgb(170, 141, 199);
     background-color: rgba(170, 141, 199, 0.2);
@@ -42,7 +41,6 @@ body {
 .practicean {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color:;
     width: fit-content;
     color: rgb(170, 141, 199);
     background-color: rgba(170, 141, 199, 0.2);
@@ -90,7 +88,4 @@ body {
     width: 100%;
     overflow:scroll;
     transition: all 0.2s ease-in;
-}
-.gallery_img:hover {
-    transform: scale(1.2)
 }
