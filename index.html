@@ -8,36 +8,32 @@
     <title>ATBG</title>
     <link rel="stylesheet" href="index.css">
     <script>
-        
-const catToHumanAge = (catAge) => {
-    if (catAge < 1) {
-        return 15 * catAge;
-    } else if (catAge < 2) {
-        return 15 + ((catAge - 1) * 9)
-    }
+    const catToHumanYears = (catYears) => {
+     if (catYears < 1) {
+         return catYears * 15
+     } else if (catYears < 2) {
+         return 15 + ((catYears - 1) * 9);
+     }
+     const firstYear = 15
+     const secondYear = 9
+     const laterYears = (catYears - 2) * 4
+     const humanYears = firstYear + secondYear + laterYears
+     return humanYears
+ }
+    const printCatToHumanYears = () => {
+    const catYears = document.querySelector("catage");
+    return `A ${catYears} year old cat is ${catToHumanYears(catYears)} in human years.`
+ }
 
-    const firstYear = 15;
-    const secondYear = 9;
-    const laterYears = (catAge - 2) * 4;
-    const humanAge = firstYear + secondYear + laterYears; 
-    return humanAge;
-}
-
-const printCatToHumanAge = () => {
-    const catName = document
-        .querySelector("#catname").value;
-    const catAge = parseInt(document
-        .querySelector("#catage").value)
-    return `Hi. I'm ${catName}. I am ${catAge} years old. If I were a hooman, I'd be ${catToHumanAge(catAge)} years old.`
-}
-
-const btn = document.querySelector("#btn")
-btn.addEventListener('click', function() {
-    console.log("clicked")
-   // const result = printCatToHumanAge()
-    document.querySelector("#result").innerHTML = printCatToHumanAge()
-});
-   </script>
+ window.onload = () => {
+    let button = document.querySelector("#btn");
+    let result = printCatToHumanYears();
+    result = document.querySelector("result")
+  
+    // Function for calculating human years
+    button.addEventListener("click", printCatToHumanYears());
+};
+    </script>
 </head>
 
 <body>
@@ -97,8 +93,9 @@ btn.addEventListener('click', function() {
     <div>
         <h2> Let's do some javascript now.</h2>
         <h3> Wanna know how old your cat is in human years? Enter their name and age below to find out!</h3>
-        <P> Cat's name</P>
-        <input type = "text" id = "catname">
+    
+        <!-- <P> Cat's name</P> -->
+        <!-- <input type = "text" id = "catname"> -->
         <p> Cat's age</p>
         <input type = "text" id = "catage">
         <p></p>
