@@ -27,12 +27,17 @@ const catToHumanAge =  (catAge) => {
     return humanAge;
 }
 
-const printCatToHumanAge = (catName, catAge) => {
-    const catName = parseInt(document
-        .querySelector("#catname").value);
+const printCatToHumanAge = () => {
+    const catName = document
+        .querySelector("#catname").value;
     const catAge = parseInt(document
         .querySelector("#catage").value)
     return `Hi. I'm ${catName}. I am ${catAge} years old. If I were a hooman, I'd be ${catToHumanAge(catAge)} years old.`
 }
 
-console.log(printCatToHumanAge('Louise', 15));
+const btn = document.querySelector("#btn")
+btn.addEventListener('click', () => {
+    const result = printCatToHumanAge()
+    document.querySelector("#result").innerHTML = result
+})
+
