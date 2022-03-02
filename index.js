@@ -12,7 +12,7 @@ console.log(`Hi, I'm ${cat}. I am ${catYears} years old in cat years, and ${huma
 
 /*(document
 parseInt.querySelector("#height").value)*/
-
+/*
 const catToHumanAge =  (catAge) => {
     if (catAge < 1) {
         return 15 * catAge;
@@ -37,6 +37,7 @@ const printCatToHumanAge = () => {
 
 const btn = document.querySelector("#btn")
 btn.addEventListener('click', () => {
+    console.log("clicked")
     const result = printCatToHumanAge()
     document.querySelector("#result").innerHTML = result
 })

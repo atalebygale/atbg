@@ -8,7 +8,8 @@
     <title>ATBG</title>
     <link rel="stylesheet" href="index.css">
     <script>
-        const catToHumanAge =  (catAge) => {
+        
+const catToHumanAge = (catAge) => {
     if (catAge < 1) {
         return 15 * catAge;
     } else if (catAge < 2) {
@@ -22,13 +23,20 @@
     return humanAge;
 }
 
-const printCatToHumanAge = (catName, catAge) => {
-    const catName = parseInt(document
-        .querySelector("#catname").value);
+const printCatToHumanAge = () => {
+    const catName = document
+        .querySelector("#catname").value;
     const catAge = parseInt(document
         .querySelector("#catage").value)
     return `Hi. I'm ${catName}. I am ${catAge} years old. If I were a hooman, I'd be ${catToHumanAge(catAge)} years old.`
 }
+
+const btn = document.querySelector("#btn")
+btn.addEventListener('click', () => {
+    console.log("clicked")
+    const result = printCatToHumanAge()
+    document.querySelector("#result").innerHTML = result
+})
     </script>
 </head>
 
@@ -95,7 +103,7 @@ const printCatToHumanAge = (catName, catAge) => {
         <input type = "text" id = "catage">
         <p></p>
         <button id="btn"> Calculate </button>
-        <output id="result">
+        <div id="result"></div>
     </div>
 </body>
 
