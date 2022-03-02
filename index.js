@@ -63,5 +63,5 @@ const catToHumanYears = (catYears) => {
     result = document.querySelector("result")
   
     // Function for calculating human years
-    button.addEventListener("click", printCatToHumanYears());
+    button.addEventListener("click", printCatToHumanYears);
 };
