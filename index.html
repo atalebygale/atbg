@@ -63,19 +63,20 @@
         <img loading="lazy" src="https://res.cloudinary.com/atalebygale/image/upload/w_800,c_scale/v1644424908/DSC_8520_vslfa9.jpg" class="gallery_img" alt="img">
     </div>
 <!--Javascript (cat years to human years)-->
-    <div>
+    <div class="cattohumanyears">
         <h2> Let's do some javascript now.</h2>
-        <h3> Wanna know how old your cat is in human years? Enter their age below to find out!</h3>
+        <h2> Wanna know how old your cat is in human years? Enter their age below to find out!</h3>
     
         <!-- <P> Cat's name</P> -->
         <!-- <input type = "text" id = "catname"> -->
-        <p> Your cat's age in years:</p>
+     <div>
+        <h2> Your cat's age in years:</p>
         <input type = "text" id = "catage">
         <br>
         <button id="btn"> Calculate </button>
         <div id="result"></div>
     </div>
-    <div class = "cattohumanyears"></div>
+    </div>
     <script>
            const catToHumanYears = (catYears) => {
      if (catYears < 1) {
