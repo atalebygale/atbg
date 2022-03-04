@@ -2,6 +2,7 @@ body {
     color:rgb(170, 141, 199);
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 /* Header */
 .header {
@@ -88,4 +89,7 @@ body {
     width: 100%;
     overflow:scroll;
     transition: all 0.2s ease-in;
+}
+.cattohumanyears {
+    padding-bottom: 40px;
 }
