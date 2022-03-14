@@ -129,6 +129,7 @@
         })
     }
     buttons.forEach(flipButtonOnClick);
+
 };
     </script>
 
@@ -239,3 +240,21 @@ setClock()
         <button class="grid-button" id="button5-4">Click when complete</button>
     </div>
 </div>
+
+<!-- Let's eat PI! -->
+
+<div class="circle">
+    <button class="piButton" id="piButton">Click here for PI</button>
+</div>
+  
+  
+
+<!-- Javascript for PI button -->
+<script>
+    const piButton = document.getElementById('piButton');
+
+piButton.addEventListener('click', function handleClick() {
+  piButton.innerHTML = '3.14159265359'});
+
+piButton(handleClick());
+</script>>
