@@ -2,7 +2,10 @@ body {
     color:rgb(170, 141, 199);
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 /* Header */
 .header {
