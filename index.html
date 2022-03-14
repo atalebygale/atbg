@@ -121,15 +121,25 @@
         answerBox.innerHTML = result;
         window.scrollTo(0, document.body.scrollHeight);
     })
+    const buttons = document.querySelectorAll(".grid-button");
+    function flipButtonOnClick(btn) {
+        btn.addEventListener("click", ()=> {
+            btn.classList.toggle("complete")
+            
+        })
+    }
+    buttons.forEach(flipButtonOnClick);
 };
     </script>
+
     <!-- Analog clock -->
+    <h2>In honor of daylight savings, I decided to make a clock so that we can SPRING forward. This clock was a nice way for me to get some more practice with HTML, CSS, and a little JavaScript. There's a really awesome tutorial for this clock on YouTube by "web dev simplified" if you want to give this one a try.</h2>
    <section class="clock-wrapper">
     <div class="clock">
         <div class="hand hour" data-hour-hand></div>
         <div class="hand minute" data-minute-hand></div>
         <div class="hand second" data-second-hand></div>
-        <div class="number number1">1</div>
+        <div class="number number1">1</div> 
         <div class="number number2">2</div>
         <div class="number number3">3</div>
         <div class="number number4">4</div>
@@ -143,19 +153,19 @@
         <div class="number number12">12</div>
     </div>
     </section>
-        <!-- JAVASCRIPT for analog clock -->
-    <script>
-        setInterval(setClock, 1000)
+  <!-- Javascript -->
+  <script>
+      setInterval(setClock, 1000)
 
 const hourHand = document.querySelector('[data-hour-hand')
 const minuteHand = document.querySelector('[data-minute-hand')
 const secondHand = document.querySelector('[data-second-hand')
 
 function setClock() {
-    const currentTime = new Date()
-    const secondsRatio = currentTime.getSeconds() / 60
-    const minutesRatio = (secondsRatio + currentTime.getMinutes()) / 60
-    const hoursRatio = (minutesRatio + currentTime.getHours()) / 12
+    const currentDate = new Date()
+    const secondsRatio = currentDate.getSeconds() / 60
+    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+    const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
     setRotation(secondHand, secondsRatio)
     setRotation(minuteHand, minutesRatio)
     setRotation(hourHand, hoursRatio)
@@ -166,8 +176,66 @@ function setRotation(element, rotationRatio) {
      
 }
 setClock()
-    </script>
+  </script>
 
-</body>
+<!-- Nursing Charting Organizer -->
 
-</html>
+<h2>This next project was inspired by the ridiculous amount of charting I do at work as a nurse. Every shift I have to chart assessments every four hours, vitals every four hours, intake/output every four hours, a pain shift at least once, the position the patient is lying in every two hours, and on and on it goes. I felt like that was too much to put into this chart right now, so I decided to focus on just the assessments.</h2>
+<h2>So every four hours I chart an assessment on all five of my patients (8am, 12pm, 4pm). With this chart, I can keep track of how much I have left to chart. Eventually, maybe I'll add all the other charting requirements to this grid.</h2>
+
+<div class="grid-container">
+    <div class="grid"></div>
+    <div class="grid">8</div>
+    <div class="grid">12</div>
+    <div class="grid">4</div>
+    <div class="grid patient">Patient 1</div>
+    <div class="grid button">
+        <button class="grid-button" id="button1-8">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button1-12">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button1-4">Click when complete</button>
+    </div>
+    <div class="grid patient">Patient 2</div>
+    <div class="grid button">
+        <button class="grid-button" id="button2-8">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button2-12">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button2-4">Click when complete</button>
+    </div>
+    <div class="grid patient">Patient 3</div>
+    <div class="grid button">
+        <button class="grid-button" id="button3-8">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button3-12">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button3-4">Click when complete</button>
+    </div>
+    <div class="grid patient">Patient 4</div>
+    <div class="grid">
+        <button class="grid-button" id="button4-8">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button4-12">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button4-4">Click when complete</button>
+    </div>
+    <div class="grid patient">Patient 5</div>
+    <div class="grid button">
+        <button class="grid-button" id="button5-1">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button5-12">Click when complete</button>
+    </div>
+    <div class="grid">
+        <button class="grid-button" id="button5-4">Click when complete</button>
+    </div>
+</div>

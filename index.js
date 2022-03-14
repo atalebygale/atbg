@@ -19,3 +19,6 @@ function setRotation(element, rotationRatio) {
      
 }
 setClock()
+
+// Nursing organizer
+
