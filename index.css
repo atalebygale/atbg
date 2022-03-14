@@ -197,61 +197,13 @@ body {
     border-radius: 50%;
 } 
 
-/* Nursing Charting Organizer */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    color: black;
-    grid-gap: 0px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 5px;
-}
-
-.grid {
-    background-color: white;
-    border: solid black 1px;
-    font-size: x-large;
-}
-
-.grid.patient {
-    padding: 10px 50px;
-}
-
-.grid-button {
-    padding: 30px 100px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    height: 100%;
-}
-
-@keyframes flipButton {
-    0% {
-        transform: rotate3d(0, 0, 0, 0deg);
-    } 50% {
-        transform: rotate3d(1, 1, 1, 180deg);
-    } 100% {
-        transform: rotate3d(2, 2, 2, 360deg);
-    }
-}
-
-.grid-button.complete {
-    animation-name: flipButton;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    background-color:green;
-}
 
 /* PI CSS */
 
 .circle {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border: 14px solid tan;
     box-shadow:0px 0px 0px 1px brown inset;
     background-color: blue;
@@ -275,9 +227,9 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    box-shadow: 2px 2px black;
-    font-size: large;
-    padding: 10px;
+    box-shadow: 3px 3px black;
+    font-size: x-large;
+    padding: 15px;
     border-radius: 50%;
     background-color: aliceblue;
   }
