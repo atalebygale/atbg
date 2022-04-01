@@ -77,7 +77,7 @@ const celsiusToFahrenheit = () => {
   const celsius = document.getElementById("celsius").value;
   const celsiusValue = parseInt(celsius);
   const fahrenheitValue = (celsiusValue * 1.8) + 32;
-  const message = `${celsius} degrees celsius is equal to ${fahrenheitValue} degrees fahrenheit.`;
+  const message = `${fahrenheitValue} degrees fahrenheit.`;
   const temperatureAnswerBox = document.getElementById("tempResult");
   temperatureAnswerBox.innerHTML = message;
 }
