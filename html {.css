@@ -1,0 +1,16 @@
+html {
+    --company-color: darkblue;
+    --spacing-small: 5px;
+}
+
+
+p {
+    color: var(--company-color);
+    margin-bottom: var(--spacing-small);
+}
+
+
+button {
+    background-color: var(--company-color);
+    border: 1px solid var(--company-color);
+}
