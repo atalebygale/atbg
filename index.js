@@ -18,17 +18,15 @@ const catToHumanYears = (catYears) => {
 }
 
 window.onload = () => {
-  //
  let button = document.querySelector("#btn");
  button.addEventListener("click", ()=> {
      console.log("clicked");
      const result = printCatToHumanYears();
      const answerBox = document.querySelector("#result");
      answerBox.innerHTML = result;
-     window.scrollTo(0, document.body.scrollHeight);
+     window.scrollBy(0, answerBox.scrollHeight + 50);
+  
  })
-
-
 };
 
 
@@ -64,4 +62,27 @@ const piButton = document.getElementById('piButton');
 piButton.addEventListener('click', function handleClick() {
   piButton.innerHTML = '3.14159265359'});
 
-piButton(handleClick());
+// piButton(handleClick());
+
+
+// Celsius to Fahrenheit
+
+// User clicks a button
+// Get the value from the celsius input
+// Calculate the degrees in fahrenheit
+// Print a message 'celsius....fahrenheit' on the screen
+
+
+const celsiusToFahrenheit = () => {
+  const celsius = document.getElementById("celsius").value;
+  const celsiusValue = parseInt(celsius);
+  const fahrenheitValue = (celsiusValue * 1.8) + 32;
+  const message = `${celsius} degrees celsius is equal to ${fahrenheitValue} degrees fahrenheit.`;
+  const temperatureAnswerBox = document.getElementById("tempResult");
+  temperatureAnswerBox.innerHTML = message;
+}
+
+
+const tempButton = document.getElementById("tempButton");
+tempButton.addEventListener("click", celsiusToFahrenheit);
+

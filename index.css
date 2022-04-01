@@ -261,6 +261,29 @@ body {
       width: 200px;
   }
 
-  .waves {
-    
+
+  /* celsius to fahrenheit */ 
+  .fahrenheitConversion {
+      margin-top: 50px;
+      text-align: center;
   }
+
+#celsiusButton {
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size:large;
+}
+
+#celsius {
+    padding: 10px;
+    height: 30px;
+    width: 50px;
+    margin-bottom: 30px;
+    font-size:xx-large;
+    text-align: center;
+}
+
+#tempResult {
+    font-size: x-large;
+    font-weight: bold;
+}
