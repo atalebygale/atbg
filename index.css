@@ -6,6 +6,7 @@ body {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 60px;
+    animation: changecolor 3s linear infinite;
 }
 /* Header */
 .header {
@@ -290,4 +291,15 @@ body {
 #tempResult {
     font-size: x-large;
     font-weight: bold;
+}
+
+
+
+@keyframes changecolor {
+    0% {background: pink}
+    25% {background: rebeccapurple}
+    50% {background: indigo}
+    75% {background: blue}
+    100% {background: lightblue}
+    
 }
