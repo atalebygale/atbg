@@ -297,9 +297,7 @@ body {
 
 @keyframes changecolor {
     0% {background: pink}
-    25% {background: rebeccapurple}
-    50% {background: indigo}
-    75% {background: blue}
-    100% {background: lightblue}
+    50% {background: lightblue}
+    100% {background: lightgreen}
     
 }
