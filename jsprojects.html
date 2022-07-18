@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATBG</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script> 
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//analytics.atalebygale.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FLEUE');
+    fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href = "/index.html">Home</a>
+        <a href = "/gallery.html" >Gallery</a>
+        <a href="/animations.html">CSS Animations</a>
+        <a href = "/jsprojects.html">JavaScript Projects</a>
+    </div>
+ 
+<!--Javascript (cat years to human years)-->
+<div class="cattohumanyears">
+    <h2> Let's do some javascript now.</h2>
+    <h2> Wanna know how old your cat is in human years? Enter their age below to find out!</h3>
+
+    <!-- <P> Cat's name</P> -->
+    <!-- <input type = "text" id = "catname"> -->
+ <div>
+    <h2> Your cat's age in years:</p>
+    <input type = "text" id = "catage">
+    <br>
+    <button id="btn"> Calculate </button>
+    <div id="result"></div>
+</div>
+</div>
+
+
+<!-- Analog clock -->
+<h2>In honor of daylight savings, I decided to make a clock so that we can SPRING forward. This clock was a nice way for me to get some more practice with HTML, CSS, and a little JavaScript. There's a really awesome tutorial for this clock on YouTube by "web dev simplified" if you want to give this one a try.</h2>
+<section class="clock-wrapper">
+<div class="clock">
+    <div class="hand hour" data-hour-hand></div>
+    <div class="hand minute" data-minute-hand></div>
+    <div class="hand second" data-second-hand></div>
+    <div class="number number1">1</div> 
+    <div class="number number2">2</div>
+    <div class="number number3">3</div>
+    <div class="number number4">4</div>
+    <div class="number number5">5</div>
+    <div class="number number6">6</div>
+    <div class="number number7">7</div>
+    <div class="number number8">8</div>
+    <div class="number number9">9</div>
+    <div class="number number10">10</div>
+    <div class="number number11">11</div>
+    <div class="number number12">12</div>
+</div>
+</section>
+
+
+<!-- Let's eat PI! -->
+
+<h1 class="PItext">Wow! Would 
+you look at that! A 
+blueberry pie!</h1>
+<div class="circle">
+<button 
+class="piButton" id="piButton">
+Click here for PI</button>
+</div>
+
+<!-- Celsius to fahrenheit -->
+<br>
+<div class="fahrenheitConversion">
+<h1>As a nurse, I have to do a lot of conversions. My least favorite is celsius to fahrenheit. Fortunately, I can use javascript to do that pesky conversion for me!</h1>
+<br>
+<div class="fahrenheitConversionSection">
+<h2>Enter the temperature in celsius below.</h2>
+<br>
+<input type = "text" id = "celsius">
+<br>
+<button id="tempButton">Convert</button>
+<br>
+<br>
+<div id="tempResult"></div>
+</div>
+</div>
+
+<div class="countdown">
+<h1>So, I'm getting married soon. May 1st, to be exact, and I'm ecstatic. So ecstatic that I made a countdown! Check it out.</h1>
+<table class="countdowntimer">
+    <tr>
+        <td colspan="4">Wedding Countdown</td>
+    </tr>
+    <tr>
+        <td id="days"></td>
+        <td id="hours"></td>
+        <td id="minutes"></td>
+        <td id="seconds"></td>
+    </tr>
+    <tr>
+        <td>Days</td>
+        <td>Hours</td>
+        <td>Minutes</td>
+        <td>Seconds</td>
+    </tr>
+</table>
+</div>
+<!-- Javascript -->
+<script src = "index.js"></script>
+</body>
+</html>

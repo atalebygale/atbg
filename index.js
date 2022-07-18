@@ -1,4 +1,4 @@
-// Cat to human yeasr
+// Cat to human years
 const catToHumanYears = (catYears) => {
   if (catYears < 1) {
       return catYears * 15

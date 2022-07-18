@@ -7,21 +7,44 @@ body {
     padding-top: 20px;
     padding-bottom: 60px;
 }
+
 /* Header */
 .header {
     color: rgb(170, 141, 199);
-    background-color: rgba(170, 141, 199, 0.2);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     max-width: fit-content;
-    margin: 0 auto;
+    margin: 100px auto;
     font-size: large;
-    border: 2px solid black;
-    resize: both;
     overflow: auto;
+    padding: 20px;
 }
 .header h3 {
     font-size:medium;
+}
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(170, 141, 199, 0.2);
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+}
+
+/* Nav Bar - dropdown menu */
+
+.navbar a {
+  color: rgb(170, 141, 199);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  flex: 1;
+}
+
+.navbar a:hover {
+    background-color: #ddd; 
 }
 /* Let me show you my favorite things */
 .letmeshow {
@@ -317,3 +340,4 @@ body {
     width: fit-content;
     padding: 20px;
 }
+
