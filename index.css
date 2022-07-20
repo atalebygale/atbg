@@ -315,12 +315,6 @@ body {
 
 
 
-@keyframes changecolor {
-    0% {background: pink}
-    50% {background: lightblue}
-    100% {background: lightgreen}
-    
-}
 
 /* Countdown */
 .countdown {
@@ -339,3 +333,16 @@ body {
     padding: 20px;
 }
 
+/* animation flashing colors */
+
+.animbody {
+    background: pink;
+    animation: changecolor 2s infinite;
+}
+
+@keyframes changecolor {
+    0% {background: lightblue}
+    50% {background: lavender}
+    100% {background: lightblue}
+    
+}
