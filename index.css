@@ -32,8 +32,6 @@ body {
     display: flex;
 }
 
-/* Nav Bar - dropdown menu */
-
 .navbar a {
   color: rgb(170, 141, 199);
   text-align: center;
