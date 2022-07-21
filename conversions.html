@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +22,6 @@
     </script>
     <!-- / Fathom -->    
 </head>
-
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
@@ -36,31 +34,59 @@
             </button>
             <div class="dropdown-links">
                 <a href = "/conversions.html">Conversions</a>
-                <a href="/time.html">Time</a>
+                <a href="time.html">Time</a>
             </div>
         </div>
     </div>
-    <!-- Header -->
-    <div class="header">
-        <h1>A Tale by Gale</h1>
-        <h3>Follow along as I learn how to code.</h3>
-    </div>
-      <!-- Cursor Trail -->
+ 
+<!--Javascript (cat years to human years)-->
+<div class="cattohumanyears">
+    <h2> Let's do some javascript now.</h2>
+    <h2> Wanna know how old your cat is in human years? Enter their age below to find out!</h3>
 
-    
+    <!-- <P> Cat's name</P> -->
+    <!-- <input type = "text" id = "catname"> -->
+ <div>
+    <h2> Your cat's age in years:</p>
+    <input type = "text" id = "catage">
+    <br>
+    <button id="btn"> Calculate </button>
+    <div id="result"></div>
+</div>
+</div>
+
+
+
+<!-- Celsius to fahrenheit -->
+<br>
+<div class="fahrenheitConversion">
+<h1>As a nurse, I have to do a lot of conversions. My least favorite is celsius to fahrenheit. Fortunately, I can use javascript to do that pesky conversion for me!</h1>
+<br>
+<div class="fahrenheitConversionSection">
+<h2>Enter the temperature in celsius below.</h2>
+<br>
+<input type = "text" id = "celsius">
+<br>
+<button id="tempButton">Convert</button>
+<br>
+<br>
+<div id="tempResult"></div>
+</div>
+</div>
+
+
+<!-- Let's eat PI! -->
+
+<h1 class="PItext">Wow! Would 
+you look at that! A 
+blueberry pie!</h1>
+<div class="circle">
+<button 
+class="piButton" id="piButton">
+Click here for PI</button>
+</div>
 
 <!-- Javascript -->
-<script src = "index.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src = "conversions.js"></script>
+</body>
+</html>

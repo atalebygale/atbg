@@ -41,9 +41,56 @@ body {
   flex: 1;
 }
 
-.navbar a:hover {
+.navbar a:hover, .dropdown:hover {
     background-color: #ddd; 
 }
+
+/* Dropdown button on navigation bar */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    color: rgb(170, 141, 199);
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-size: 17px;
+    flex: 1;
+}
+
+.dropdown-links {
+  display: none;
+  position: absolute;
+  background-color: rgba(170, 141, 199, 0.2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 171px;
+}
+
+.dropdown-links a {
+  float: none;
+  color: rgb(170, 141, 199);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-links a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-links {
+    display: block;
+  }
+
 /* Let me show you my favorite things */
 .letmeshow {
     margin-top: 30px;
@@ -132,7 +179,6 @@ body {
     align-items: center;
     text-align: center;
     color: black;
-    font-size:large;
 }
 #btn {
     padding: 40px;
@@ -346,3 +392,4 @@ body {
     100% {background: lightblue}
     
 }
+
