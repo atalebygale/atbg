@@ -8,7 +8,8 @@ body {
 .container {
     color:rgb(170, 141, 199);
     margin: 0 auto;
-    max-width: 95%;
+    width: 95%;
+    max-width: 1000px;
 }
 
 /* Header */
