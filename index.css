@@ -1,11 +1,13 @@
 body {
     color:rgb(170, 141, 199);
-    max-width: 800px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color:rgb(170, 141, 199);
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 60px;
 }
 
 /* Header */
