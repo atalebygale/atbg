@@ -138,6 +138,7 @@ body {
     outline: none;
     border: 2px solid rgba(0, 0, 0, 0);
     background-color: rgba(230, 230, 230, 0.6);
+    font-family:'Courier New', Courier, monospace;
 } 
 
 .field:hover {
