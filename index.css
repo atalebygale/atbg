@@ -39,8 +39,8 @@ body {
 }
 
 .scrollbtn {
-    background-color: rgb(170, 141, 199);
-    color: white;
+    background-color: rgba(170, 141, 199, 0.2);
+    color: rgb(170, 141, 199);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: large;
@@ -55,7 +55,8 @@ body {
 }
 
 .scrollbtn:hover {
-    background-color: rgba(170, 141, 199, 0.2); 
+    background-color: rgba(106, 74, 137, 0.2); 
+    cursor: pointer;
 }
 .header h3 {
     font-size:medium;
