@@ -43,11 +43,12 @@ body {
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: large;
     border: none;
     box-shadow: 7px 7px 5px gray;
     border-radius: 25%;
     height: 60px;
-    width: 100px;
+    width: 150px;
     padding: 10px;
     position: relative;
     font-family:'Cormorant SC', serif;
