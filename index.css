@@ -3,19 +3,26 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Cormorant SC', serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+    
 }
 
 .container {
     color:rgb(170, 141, 199);
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     max-width: 1000px;
 }
 
 /* Header */
 .header {
+    background-color: rgba(170, 141, 199, 0.2);
     color: rgb(170, 141, 199);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Cormorant SC', serif;
     text-align: center;
     max-width: fit-content;
     margin: 100px auto;
@@ -23,9 +30,145 @@ body {
     overflow: auto;
     padding: 20px;
 }
+
+.btncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.scrollbtn {
+    background-color: rgb(170, 141, 199);
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: none;
+    box-shadow: 7px 7px 5px gray;
+    border-radius: 25%;
+    padding: 10px;
+    position: relative;
+    font-family:'Cormorant SC', serif;
+}
+
+.scrollbtn:hover {
+    background-color: rgba(170, 141, 199, 0.2); 
+}
 .header h3 {
     font-size:medium;
 }
+
+/* Contact Form */
+.contactcontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    margin-bottom: 50px;
+    
+}
+
+.contactcontainer:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/atalebygale/image/upload/v1658504531/LauraWill63_iywbla.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.contactbox {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    /* color: black; */ 
+}
+
+.left {
+    height: 100%;
+    background: url("https://res.cloudinary.com/atalebygale/image/upload/v1658504531/LauraWill63_iywbla.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+.contactmetext {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.contactmetext:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(170, 141, 199);
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+} 
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgb(170, 141, 199)
+}
+
+.contactbtn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(213, 198, 228);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+}
+
+.contactbtn:hover {
+    background-color: rgb(170, 141, 199);
+}
+
+@media screen and (max-width:880px) {
+    .contactbox{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+    
+}
+
 /* Navigation Bar */
 .navbar {
     background-color: rgba(170, 141, 199, 0.2);
@@ -34,6 +177,7 @@ body {
     margin-bottom: 10px;
     width: 100%;
     display: flex;
+    font-family:'Cormorant SC', serif;
 }
 
 .navbar a {
@@ -43,6 +187,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   flex: 1;
+  font-family:'Cormorant SC', serif;
 }
 
 .navbar a:hover, .dropdown:hover {
@@ -76,6 +221,7 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   width: 171px;
+  font-family:'Cormorant SC', serif;
 }
 
 .dropdown-links a {
@@ -102,6 +248,7 @@ body {
     width: fit-content;
     color: rgb(170, 141, 199);
     background-color: rgba(170, 141, 199, 0.2);
+    font-family:'Cormorant SC', serif;
 }
 .favthings {
     font-size:larger;
@@ -113,8 +260,7 @@ body {
     transform: translateY(-10px);
 }
 .fonts {
-    font-family:cursive;
-    font-weight: bold;
+    font-family:'Cormorant SC', serif;
 }
 /* Let's practice animatinos */
 .practicean {
