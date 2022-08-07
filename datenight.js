@@ -7,7 +7,12 @@ const dates = [
     {date1: "Cook a gourmet dinner at home together."},
     {date1: "Try a new restaurant!"},
     {date1: "Picnic on the porch."},
-    {date1: "Go to a new bar and choose each other's cocktail."}
+    {date1: "Go to a new bar and choose each other's cocktail."},
+    {date1: "Craft night."},
+    {date1: "Make a new recipe together."},
+    {date1: "Go to the gym and have a spa night when you get home."},
+    {date1: "Go bowling."},
+    {date1: "Hit the thrift store and buy each other new outfits!"}
 ];
 
 // function to choose a random object from the array above
