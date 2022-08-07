@@ -555,6 +555,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 #dategeneratorbutton {
@@ -565,14 +567,14 @@ body {
     margin: 30px;
     max-width: fit-content;
     max-height: 50px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(106, 74, 137, 0.2); 
     color:rgb(170, 141, 199);
     font-family: 'Cormorant SC', serif;
 }
 
 #dategeneratorbutton:hover {
-    background-color: rgba(106, 74, 137, 0.2); 
     cursor: pointer;
+    background-color: rgba(106, 74, 137, 0.4); 
 }
 
 .resultcontainer {
